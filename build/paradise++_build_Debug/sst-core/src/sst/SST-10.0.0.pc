@@ -1,0 +1,12 @@
+prefix=/global/cscratch1/sd/nnguyent/sst-bs/install/paradise++_install_Debug
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SSTCore
+Description: Structural Simulation Toolkit (SST) Parallel Discrete Event Core
+Version: 10.0.0
+URL: http://www.sst-simulator.org/
+Libs: -Wl,-undefined -Wl,dynamic_lookup
+Cflags: -DHAVE_CONFIG_H -I${includedir} -I${includedir}/sst 
+
